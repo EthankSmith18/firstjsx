@@ -1,17 +1,17 @@
 import React, { Component } from "react";
+import Header from "./components/Header";
+import List from "./components/List";
 
 export class App extends Component {
   render() {
     return (
       <div>
-        <h1>Hello Dojo!</h1>
-        <h2>Thing I need to do:</h2>
-        <ul>
-          <li>Learn React</li>
-          <li>Climb Mt. Everest</li>
-          <li>Run a marathon</li>
-          <li>Feed the dogs</li>
-        </ul>
+        <div className="container">
+        <Header />
+        </div>
+        <div className="container">
+        <List />
+        </div>
       </div>
     );
   }
